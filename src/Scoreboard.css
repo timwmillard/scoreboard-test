@@ -1,0 +1,251 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scoreboard {
+  display: flex;
+  height: 50px;
+  font-family: Arial Black;
+  font-weight: normal;
+  font-size: 22px;
+  text-shadow: 1px 1px rgba(10,10,10, 0.2);
+}
+
+.main-scoreboard {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+}
+
+/* Main Scoreboard Section */
+
+.hometeam-code-outline {
+  height: 100%;
+  width: 100px;
+/*   border: 2px dashed #ccc; */
+}
+
+.game-score-outline {
+  height: 100%;
+  width: 100px;
+/*   border: 2px dashed #ccc; */
+}
+
+.awayteam-code-outline {
+  height: 100%;
+  width: 100px;
+/*   border: 2px dashed #ccc; */
+}
+
+.hometeam-code {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 86px;
+  /* border-right: 14px solid #de3f39; */
+  color: #fff;
+  background-color: #da261d;
+  /* transition: width 0.2s ease-in 0.2s,
+             border 0.1s ease-in 0.3s; */
+}
+
+.hometeam-code.hide {
+  width: 0;
+  border: none;
+  /* transition: width 0.2s ease-in 0.0s,
+             border 0.1s ease-in 0.1s; */
+}
+
+.hometeam-code-text {
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.3s; */
+}
+
+.hometeam-code-text.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.1s; */
+}
+
+.game-score {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100px;
+  color: #fff;
+  background-color: #00123f;
+  font-family: Arial Black, Arial;
+  font-size: 26px;
+  /* transition: width 0.2s ease-out 0.0s; */
+}
+
+.game-score.hide {
+  width: 0;
+  /* transition: width 0.2s ease-out 0.2s; */
+}
+.game-score-text {
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.1s; */
+}
+
+.game-score-text.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.1s; */
+}
+
+.awayteam-code {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 86px;
+  /* border-left: 14px solid #eee; */
+  color: #1a4b39;
+  background-color: #fff;
+  /* transition: width 0.2s ease-in 0.2s,
+             border 0.1s ease-in 0.3s; */
+}
+
+.awayteam-code.hide {
+  width: 0;
+  border: none;
+  /* transition: width 0.2s ease-in 0.0s,
+             border 0.2s ease-in 0.1s; */
+}
+
+.awayteam-code-text {
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.3s; */
+}
+
+.awayteam-code-text.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.1s; */
+}
+
+
+
+/* Game Time Section */
+
+.game-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 120px; /* 120px */
+  /* transition: width 0.4s ease-in 0.0s; */
+}
+
+.game-time.hide {
+  width: 0;
+  /* transition: width 0.4s ease-in 0.0s; */
+}
+
+.game-time-text {
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.3s; */
+}
+
+.game-time-text.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.0s; */
+}
+
+.team-stat {
+  display: flex;
+  height: 100%;
+/*   width: 510px; */
+}
+
+.team {
+  display: flex;
+  flex-grow: 1;
+  width: 290px;
+  /* transition: width 0.4s ease-in 0.0s; */
+}
+
+.team.hide {
+  width: 0;
+  /* transition: width 0.4s ease-in 0.5s; */
+}
+
+.team-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px 0 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  /* transition: opacity 0.1s ease-in 0.3s; */
+}
+
+.team-logo.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.5s; */
+}
+
+
+.team-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.3s; */
+}
+
+.team-name.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.5s; */
+}
+
+
+.stat {
+  display: flex;
+  flex-grow: 1;
+  width: 220px;
+  /* transition: width 0.4s ease-in 0.5s; */
+}
+
+.stat.hide {
+  width: 0;
+  /* transition: width 0.4s ease-in 0.0s; */
+}
+
+.stat-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: smaller;
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.8s; */
+}
+
+.stat-name.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.0s; */
+}
+
+.stat-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: larger;
+  opacity: 1;
+  /* transition: opacity 0.1s ease-in 0.8s; */
+}
+
+.stat-value.hide {
+  opacity: 0;
+  /* transition: opacity 0.1s ease-in 0.0s; */
+}
